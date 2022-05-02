@@ -1,0 +1,19 @@
+<div class="w-full pb-4">
+  <div class="task flex w-full flex-row h-24 overflow-hidden">
+    <div class="w-11/12 pl-4 flex items-center">
+      <div>
+        <span class="block text-title ellipsis_title">
+          {{ data?.title }}
+        </span>
+        <span class="block text-xs text-subtitle ellipsis_description">{{
+          data?.description
+        }}</span>
+      </div>
+    </div>
+    <div class="w-1/12 flex items-center justify-end pr-4">
+      <button (click)="deleteTask()">
+        <img src="assets/svgs/trash.svg" alt="delete" />
+      </button>
+    </div>
+  </div>
+</div>

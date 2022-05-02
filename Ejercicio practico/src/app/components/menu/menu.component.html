@@ -1,0 +1,42 @@
+<head class="bg-white block">
+  <div class="relative flex items-center px-4 justify-between">
+    <div class="menu flex justify-start py-4">
+      <button class="px-2">
+        <img src="assets/svgs/menu.svg" alt="menu" />
+      </button>
+      <button class="px-2">
+        <img src="assets/svgs/search.svg" alt="search" />
+      </button>
+    </div>
+    <div class="logo">
+      <img class="w-auto" src="assets/imgs/logo.png" alt="logo" />
+    </div>
+    <div class="user flex justify-start py-4">
+      <button class="px-2">
+        <img src="assets/svgs/login.svg" alt="menu" />
+      </button>
+      <button class="px-2">
+        <img src="assets/svgs/cart.svg" alt="cart" />
+      </button>
+    </div>
+  </div>
+</head>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/datos" routerLinkActive="active">{{
+        "PAGE.MY_DATA" | translate
+      }}</a>
+    </li>
+    <li>
+      <a routerLink="/" routerLinkActive="active">{{
+        "PAGE.MY_TASKS" | translate
+      }}</a>
+    </li>
+    <li>
+      <a routerLink="/devoluciones" routerLinkActive="active">{{
+        "PAGE.MY_RETURNS" | translate
+      }}</a>
+    </li>
+  </ul>
+</nav>

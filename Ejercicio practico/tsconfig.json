@@ -1,0 +1,44 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": false,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "ES2020",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "paths": {
+      "components/*": ["src/app/components/*"],
+      "config/*": ["src/app/config/*"],
+      "interfaces/*": ["src/app/interfaces/*"],
+      "utils/*": ["src/app/utils/*"],
+      "pages/*": ["src/app/pages/*"],
+      "modules/*": ["src/app/modules/*"],
+      "services/*": ["src/app/services/*"],
+      "pipes/*": ["src/app/pipes/*"],
+      "directives/*": ["src/app/directives/*"],
+      "environments/*": ["src/environments/*"]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

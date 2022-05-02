@@ -1,0 +1,8 @@
+<p *ngIf="!control?.errors" class="text-red-500 text-xs flex"></p>
+<div *ngFor="let validator of field.validators">
+  <span
+    class="text-red-500 text-xs flex"
+    *ngIf="control?.touched && reviewValidator(validator)"
+    >{{ getMessage(validator) | uppercase | translate }}</span
+  >
+</div>

@@ -1,0 +1,33 @@
+{
+  "BUTTON": {
+    "SAVE": "Guardar",
+    "CANCEL": "Cancelar",
+    "ADD_TASK": "Añadir tarea"
+  },
+  "INPUT": {
+    "NAME": "Nombre",
+    "DESCRIPTION": "Descripción"
+  },
+  "PLACEHOLDER": {
+    "NAME": "Nombre",
+    "DESCRIPTION": "Descripción"
+  },
+  "TITLE": {
+    "MY_TASKS": "Mis Tareas",
+    "ADD_TASK": "Añadir Tarea"
+  },
+  "PAGE": {
+    "MY_DATA": "Mis datos",
+    "MY_TASKS": "Mis tareas",
+    "MY_RETURNS": "Mis devoluciones"
+  },
+  "VALIDATORS": {
+    "REQUIRED": "Por favor, rellene este campo.",
+    "PHONE": "Por favor, introduzca un telefono correcto.",
+    "MIN": "La longitud de campo es mayor.",
+    "MAX": "La longitud de campo es menor.",
+    "MAIL": "El correo electronico no es correcto.",
+    "POSTAL": "El codigo postal no es correcto.",
+    "DATE": "La fecha es incorrecta."
+  }
+}

@@ -1,0 +1,22 @@
+<div class="px-4 py-10">
+  <span class="block text-xl font-bold pb-5">Mis Tareas</span>
+  <app-task *ngFor="let tarea of data" [data]="tarea" (delete)="getId($event)">
+  </app-task>
+  <div class="pt-8">
+    <app-button [theme]="'main'" (click)="add()" text="ADD_TASK"></app-button>
+  </div>
+</div>
+<app-modal #modal>
+  <span class="block text-xl font-bold pb-10">{{
+    "TITLE.ADD_TASK" | translate
+  }}</span>
+  <app-form #form_modal [state]="templateModalPersonal"> </app-form>
+  <div class="bg-white grid grid-cols-2 gap-4">
+    <app-button
+      [theme]="'modal_cancel'"
+      (click)="modal?.close()"
+      text="CANCEL"
+    ></app-button>
+    <app-button [theme]="'modal'" text="SAVE" (click)="addTask()"></app-button>
+  </div>
+</app-modal>

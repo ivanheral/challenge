@@ -1,0 +1,32 @@
+
+
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/all",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "ignorePatterns": [
+        "*.js"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "project": [
+            "tsconfig.json"
+        ],
+        "sourceType": "module"
+    },
+    "root": true,
+    "rules": {
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+        "@angular-eslint/prefer-on-push-component-change-detection": "off",
+        "@typescript-eslint/no-explicit-any": "off"
+    }
+}

@@ -1,0 +1,23 @@
+<form
+  [formGroup]="formGroup"
+  [ngClass]="theme?.form ? theme?.form + ' ' : 'w-full'"
+>
+  <div [ngClass]="getClass(_f)" *ngFor="let _f of formTemplate.fields">
+    <div [ngSwitch]="_f.type">
+      <app-input
+        *ngSwitchCase="'text'"
+        [group]="formGroup"
+        [form]="_f"
+        [theme]="theme"
+      ></app-input>
+      <app-textarea
+        *ngSwitchCase="'textarea'"
+        [group]="formGroup"
+        [form]="_f"
+        [theme]="theme"
+      >
+      </app-textarea>
+    </div>
+  </div>
+  <ng-content></ng-content>
+</form>
